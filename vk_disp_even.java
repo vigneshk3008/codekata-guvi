@@ -17,12 +17,8 @@ public class HelloWorld{
               {
                   count=count+1;
                   System.out.print(" "+n);
-                  n+=1;
-              }
-              else
-              {
-                  n+=1;
-              }
+               }
+              n+=1;
           }
           System.out.println("the number of even numbers between "+ini+" to "+tar+" is "+count);
      }
