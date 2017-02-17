@@ -16,6 +16,7 @@ public class HelloWorld{
               if((n%2)!=0)
               {
                   count=count+1;
+                  System.out.print(" "+n);
                   n+=1;
               }
               else
