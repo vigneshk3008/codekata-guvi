@@ -17,10 +17,10 @@ public class HelloWorld
                 b=1;
                 break;
               }
+          }    
               if(b==1)
               {
                 System.out.println("the given number is prime number");
               }    
-          }    
      }     
 }
