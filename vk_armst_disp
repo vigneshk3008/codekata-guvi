@@ -1,0 +1,51 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	static int power(int a, int b)
+          {
+          	
+          	resul=1;
+          	while(b!=0)
+          	{
+          		resul*=a;
+          		--b;
+          	}
+          	//System.out.print("rchy");
+          	return resul;
+          }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	  	  int ini,tar,t1,rem,sum=0,result=0;
+          Scanner in=new Scanner(System.in);
+          System.out.println("Enter the initial value:");
+          ini=in.nextInt();
+          System.out.println("Enter the target value:");
+          tar=in.nextInt();
+          for(int i=ini;i<=tar;i++){
+          	int temp =i;
+          	for(int k=0;k<String.valueOf(i).length();k++){
+          		
+          		
+          		sum=sum+power(temp%10,String.valueOf(i).length());
+          		temp=temp/10;
+          		
+          		//System.out.println(sum);
+          	
+          		
+          	}
+          		if(sum==i)
+          		{
+          			System.out.println(i);
+          		
+          		}	sum=0;
+          }
+          
+       
+	}
+}
